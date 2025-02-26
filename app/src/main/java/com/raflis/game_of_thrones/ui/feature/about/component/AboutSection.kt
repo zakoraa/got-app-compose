@@ -2,19 +2,25 @@ package com.raflis.game_of_thrones.ui.feature.about.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -28,10 +34,15 @@ fun AboutSection(innerPadding: PaddingValues, modifier: Modifier = Modifier) {
             .padding(innerPadding)
             .fillMaxSize(),
     ) {
-        Column {
+        Column(
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.verticalScroll(rememberScrollState()),
+        ) {
+
             Box(
                 modifier = Modifier
-                    .size(120.dp)
+                    .size(200.dp)
                     .clip(CircleShape)
                     .background(MaterialTheme.colorScheme.secondary)
                     .padding(2.dp)
@@ -39,13 +50,18 @@ fun AboutSection(innerPadding: PaddingValues, modifier: Modifier = Modifier) {
                 Image(
                     painter = painterResource(id = R.drawable.photo_profile),
                     contentDescription = stringResource(R.string.photo_profile_desc),
-                    modifier = Modifier.clip(CircleShape)
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .clip(CircleShape)
+                        .matchParentSize()
                 )
             }
-            Text("Muhammad Rafli Silehu", style = MaterialTheme.typography.titleMedium)
+            Spacer(modifier = Modifier.height(20.dp))
+            Text("Muhammad Rafli Silehu", style = MaterialTheme.typography.titleLarge)
             Text("raflisilehu20@gmail.com ")
             Text("Github: Zakoraa")
             Text("LinkedIn: Muhammad Rafli Silehu")
+            Spacer(modifier = Modifier.height(80.dp))
         }
     }
 }

@@ -25,6 +25,7 @@ fun CharacterCardList(
     listState: LazyListState,
     query: String,
     onQueryChange: (String) -> Unit,
+    onCharacterClick: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyColumn(
@@ -32,7 +33,6 @@ fun CharacterCardList(
         contentPadding = PaddingValues(bottom = 80.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
         modifier = modifier
-
     ) {
         stickyHeader {
             HomeSearchBar(
@@ -60,7 +60,8 @@ fun CharacterCardList(
                     name = item.name,
                     title = item.title,
                     image = item.image,
-                    houseImage = item.house.image
+                    houseImage = item.house.image,
+                    onClick = { onCharacterClick(item.id) }
                 )
             }
         }

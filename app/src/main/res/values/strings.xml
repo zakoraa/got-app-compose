@@ -7,8 +7,12 @@
     <string name="my_profile">My Profile</string>
     <string name="photo_profile_desc">My photo profile</string>
     <string name="about_page">about_page</string>
-
     <string name="ic_arrow_back_desc">Back from screen</string>
 
+    <string name="actor">Actor: %1$s</string>
+    <string name="age">Age: %1$d</string>
+    <string name="episode_count">Episode Count: %1$d</string>
+    <string name="culture">Culture: %1$s</string>
+    <string name="description">Description:</string>
 
 </resources>

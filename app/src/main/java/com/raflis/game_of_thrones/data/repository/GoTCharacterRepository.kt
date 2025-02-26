@@ -43,6 +43,7 @@ class GoTCharacterRepository {
 
         return listOf(
             GoTCharacter(
+                id = 1,
                 name = "Eddard Stark",
                 house = houseStark,
                 title = "Lord of Winterfell",
@@ -54,6 +55,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/en/5/52/Ned_Stark-Sean_Bean.jpg"
             ),
             GoTCharacter(
+                id = 2,
                 name = "Sansa Stark",
                 house = houseStark,
                 title = "Lady of Winterfell",
@@ -65,6 +67,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/6/63/QueenSansa.PNG/revision/latest?cb=20210215100224"
             ),
             GoTCharacter(
+                id = 3,
                 name = "Arya Stark",
                 house = houseStark,
                 title = "Faceless Assassin",
@@ -76,6 +79,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/b/be/AryaShipIronThrone.PNG/revision/latest?cb=20190520174300"
             ),
             GoTCharacter(
+                id = 4,
                 name = "Bran Stark",
                 house = houseStark,
                 title = "Three-Eyed Raven",
@@ -87,6 +91,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/8/81/KingBran.PNG/revision/latest?cb=20190520173855"
             ),
             GoTCharacter(
+                id = 5,
                 name = "Catelyn Stark",
                 house = houseStark,
                 title = "Lady of Winterfell",
@@ -98,6 +103,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/id/3/3c/Michelle_Fairley_Cat_Stark_in_the_Vale.png"
             ),
             GoTCharacter(
+                id = 6,
                 name = "Robb Stark",
                 house = houseStark,
                 title = "King in the North",
@@ -109,6 +115,7 @@ class GoTCharacterRepository {
                 image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZSrJrb3TnOr6LuG2wyQavy2WGZRulQTGZw&s"
             ),
             GoTCharacter(
+                id = 7,
                 name = "Benjen Stark",
                 house = houseStark,
                 title = "First Ranger of the Night's Watch",
@@ -122,6 +129,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/0/0f/610_Benjen_Promo_Crop.png/revision/latest?cb=20160629183134"
             ),
             GoTCharacter(
+                id = 8,
                 name = "Rickon Stark",
                 house = houseStark,
                 title = "Lord of Winterfell's Son",
@@ -134,6 +142,7 @@ class GoTCharacterRepository {
             ),
 
             GoTCharacter(
+                id = 9,
                 name = "Jon Snow (Aegon Targaryen)",
                 house = houseTargaryen,
                 title = "Rightful Heir to the Iron Throne",
@@ -145,6 +154,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/d/d0/JonSnow8x06.PNG/revision/latest?cb=20190714094440"
             ),
             GoTCharacter(
+                id = 10,
                 name = "Daenerys Targaryen",
                 house = houseTargaryen,
                 title = "Mother of Dragons",
@@ -156,6 +166,7 @@ class GoTCharacterRepository {
                 image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToXA2R7iB6H8wrNgBQxzr9CJKxGkolnj-cKw&s"
             ),
             GoTCharacter(
+                id = 11,
                 name = "Viserys Targaryen",
                 house = houseTargaryen,
                 title = "Rightful King",
@@ -167,6 +178,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/goff/images/a/a8/Viserys.png/revision/latest?cb=20190510211742"
             ),
             GoTCharacter(
+                id = 12,
                 name = "Rhaegar Targaryen",
                 house = houseTargaryen,
                 title = "Prince of Dragonstone",
@@ -178,6 +190,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/p__/images/4/47/Rhaegar_Targaryen_%28GOT%29.jpg/revision/latest?cb=20240920001922&path-prefix=protagonist"
             ),
             GoTCharacter(
+                id = 13,
                 name = "Aerys II Targaryen",
                 house = houseTargaryen,
                 title = "The Mad King",
@@ -190,6 +203,7 @@ class GoTCharacterRepository {
             ),
 
             GoTCharacter(
+                id = 14,
                 name = "Tywin Lannister",
                 house = houseLannister,
                 title = "Lord of Casterly Rock",
@@ -201,6 +215,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/7/71/Tywin_Lannister_4x08.jpg/revision/latest?cb=20170830015346"
             ),
             GoTCharacter(
+                id = 15,
                 name = "Cersei Lannister",
                 house = houseLannister,
                 title = "Queen of the Seven Kingdoms",
@@ -212,6 +227,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/b/b0/CERSEIBATTLEOFKINGSLANDING.PNG/revision/latest?cb=20190906021534"
             ),
             GoTCharacter(
+                id = 16,
                 name = "Jaime Lannister",
                 house = houseLannister,
                 title = "Kingslayer",
@@ -223,6 +239,7 @@ class GoTCharacterRepository {
                 image = "https://hbz.h-cdn.co/assets/16/21/3200x3200/square-1464214104-hbz-got-jaime-lannister.jpeg"
             ),
             GoTCharacter(
+                id = 17,
                 name = "Tyrion Lannister",
                 house = houseLannister,
                 title = "Hand of the Queen",
@@ -234,6 +251,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/9/95/HandoftheKingTyrionLannister.PNG/revision/latest?cb=20190520175204"
             ),
             GoTCharacter(
+                id = 18,
                 name = "Joffrey Baratheon",
                 house = houseLannister,
                 title = "King of the Seven Kingdoms",
@@ -245,6 +263,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/en/b/bd/Joffrey_Baratheon-Jack_Gleeson.jpg"
             ),
             GoTCharacter(
+                id = 19,
                 name = "Myrcella Baratheon",
                 house = houseLannister,
                 title = "Princess of the Seven Kingdoms",
@@ -256,6 +275,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/0/02/MyrcellaS5Cropped.jpg/revision/latest?cb=20160802025401"
             ),
             GoTCharacter(
+                id = 20,
                 name = "Tommen Baratheon",
                 house = houseLannister,
                 title = "King of the Seven Kingdoms",
@@ -268,6 +288,7 @@ class GoTCharacterRepository {
             ),
 
             GoTCharacter(
+                id = 21,
                 name = "Robert Baratheon",
                 house = houseBaratheon,
                 title = "King of the Seven Kingdoms",
@@ -279,6 +300,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/4/43/Robert_crop.png/revision/latest?cb=20210223122212"
             ),
             GoTCharacter(
+                id = 22,
                 name = "Stannis Baratheon",
                 house = houseBaratheon,
                 title = "Lord of Dragonstone",
@@ -290,6 +312,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/2/2f/StannisNew.png/revision/latest?cb=20210313165449"
             ),
             GoTCharacter(
+                id = 23,
                 name = "Renly Baratheon",
                 house = houseBaratheon,
                 title = "Lord of Storm's End",
@@ -302,6 +325,7 @@ class GoTCharacterRepository {
             ),
 
             GoTCharacter(
+                id = 24,
                 name = "Balon Greyjoy",
                 house = houseGreyjoy,
                 title = "Lord of the Iron Islands",
@@ -313,6 +337,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/1/19/Balon-profile.png/revision/latest/thumbnail/width/360/height/360?cb=20170420085750"
             ),
             GoTCharacter(
+                id = 25,
                 name = "Theon Greyjoy",
                 house = houseGreyjoy,
                 title = "Ward of the Starks",
@@ -324,6 +349,7 @@ class GoTCharacterRepository {
                 image = "https://static.wikia.nocookie.net/gameofthrones/images/7/78/TheonS8E1.PNG/revision/latest?cb=20190415192721"
             ),
             GoTCharacter(
+                id = 26,
                 name = "Yara Greyjoy",
                 house = houseGreyjoy,
                 title = "Lady of the Iron Islands",
@@ -336,6 +362,7 @@ class GoTCharacterRepository {
             ),
 
             GoTCharacter(
+                id = 27,
                 name = "Oberyn Martell",
                 house = houseMartell,
                 title = "Prince of Dorne",
@@ -347,6 +374,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Oberyn_Martell-Pedro_Pascal.jpg/220px-Oberyn_Martell-Pedro_Pascal.jpg"
             ),
             GoTCharacter(
+                id = 28,
                 name = "Ellaria Sand",
                 house = houseMartell,
                 title = "Paramour of Oberyn Martell",
@@ -358,6 +386,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/en/8/85/Ellaria_Sand.jpg"
             ),
             GoTCharacter(
+                id = 29,
                 name = "Doran Martell",
                 house = houseMartell,
                 title = "Prince of Dorne",
@@ -372,6 +401,7 @@ class GoTCharacterRepository {
             ),
 
             GoTCharacter(
+                id = 30,
                 name = "Olenna Tyrell",
                 house = houseTyrell,
                 title = "Queen of Thorns",
@@ -383,6 +413,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Olenna_Tyrell-Diana_Rigg.jpg/220px-Olenna_Tyrell-Diana_Rigg.jpg"
             ),
             GoTCharacter(
+                id = 31,
                 name = "Margaery Tyrell",
                 house = houseTyrell,
                 title = "Queen of the Seven Kingdoms",
@@ -394,6 +425,7 @@ class GoTCharacterRepository {
                 image = "https://upload.wikimedia.org/wikipedia/en/3/37/Margaery_Tyrell_in_the_Gardens.jpg"
             ),
             GoTCharacter(
+                id = 32,
                 name = "Loras Tyrell",
                 house = houseTyrell,
                 title = "Knight of the Flowers",

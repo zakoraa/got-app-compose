@@ -21,8 +21,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavHostController
 import com.raflis.game_of_thrones.R
 import com.raflis.game_of_thrones.data.repository.GoTCharacterRepository
+import com.raflis.game_of_thrones.ui.core.navigation.Screen
 import com.raflis.game_of_thrones.ui.feature.home.component.CharacterCardList
 import com.raflis.game_of_thrones.ui.feature.home.view_model.HomeViewModel
 import com.raflis.game_of_thrones.ui.feature.home.view_model.ViewModelFactory
@@ -30,6 +32,7 @@ import com.raflis.game_of_thrones.ui.feature.home.view_model.ViewModelFactory
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HomeScreen(
+    navController: NavHostController,
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = viewModel(factory = ViewModelFactory(GoTCharacterRepository())),
 ) {
@@ -42,11 +45,14 @@ fun HomeScreen(
             groupedCharacters = groupedCharacters,
             listState = listState,
             query = query,
-            onQueryChange = viewModel::search
+            onQueryChange = viewModel::search,
+            onCharacterClick = { characterId ->
+                navController.navigate(Screen.CharacterDetail.createRoute(characterId))
+            }
         )
 
         FloatingActionButton(
-            onClick = {},
+            onClick = { navController.navigate(Screen.About.route)},
             containerColor = MaterialTheme.colorScheme.primary,
             modifier = Modifier
                 .align(Alignment.BottomEnd)

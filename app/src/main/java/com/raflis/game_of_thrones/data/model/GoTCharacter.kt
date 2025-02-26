@@ -5,6 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class GoTCharacter(
+    val id: Int,
     val name: String,
     val house: House,
     val title: String,

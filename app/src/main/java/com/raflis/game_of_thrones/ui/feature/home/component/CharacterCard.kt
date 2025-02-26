@@ -37,6 +37,7 @@ fun CharacterCard(
     title: String,
     image: String,
     houseImage: String,
+    onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Card(
@@ -72,7 +73,7 @@ fun CharacterCard(
                     modifier = Modifier.width(160.dp)
                 )
                 Spacer(modifier = Modifier.weight(1f))
-                Button(onClick = {}) {
+                Button(onClick = onClick) {
                     Text(stringResource(R.string.see_detail))
                 }
             }
@@ -102,6 +103,7 @@ fun CharacterCard(
     }
 }
 
+
 @Preview(showBackground = true)
 @Composable
 fun CharacterCardPreview() {
@@ -111,6 +113,7 @@ fun CharacterCardPreview() {
             title = "Istri Rafli",
             image = "https://upload.wikimedia.org/wikipedia/en/5/52/Ned_Stark-Sean_Bean.jpg",
             houseImage = "https://static.wikia.nocookie.net/gameofthrones/images/7/7e/House_Stark.svg/revision/latest/thumbnail/width/360/height/360?cb=20230905233833",
+            onClick = {}
         )
     }
 }
