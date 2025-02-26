@@ -32,7 +32,13 @@ import com.raflis.game_of_thrones.ui.core.component.NetworkImage
 import com.raflis.game_of_thrones.ui.theme.GameOfThronesTheme
 
 @Composable
-fun CharacterCard(name: String, title: String, image: String, houseImage: String, modifier: Modifier = Modifier) {
+fun CharacterCard(
+    name: String,
+    title: String,
+    image: String,
+    houseImage: String,
+    modifier: Modifier = Modifier
+) {
     Card(
         shape = RoundedCornerShape(20.dp),
         colors = CardDefaults.cardColors(

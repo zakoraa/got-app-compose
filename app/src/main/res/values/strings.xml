@@ -4,4 +4,11 @@
     <string name="see_detail">See detail</string>
     <string name="search">Search</string>
     <string name="no_data">No Data</string>
+    <string name="my_profile">My Profile</string>
+    <string name="photo_profile_desc">My photo profile</string>
+    <string name="about_page">about_page</string>
+
+    <string name="ic_arrow_back_desc">Back from screen</string>
+
+
 </resources>

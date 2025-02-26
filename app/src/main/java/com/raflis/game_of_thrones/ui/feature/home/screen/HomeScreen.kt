@@ -18,8 +18,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.raflis.game_of_thrones.R
 import com.raflis.game_of_thrones.data.repository.GoTCharacterRepository
 import com.raflis.game_of_thrones.ui.feature.home.component.CharacterCardList
 import com.raflis.game_of_thrones.ui.feature.home.view_model.HomeViewModel
@@ -53,7 +55,7 @@ fun HomeScreen(
         ) {
             Icon(
                 imageVector = Icons.Default.Person,
-                contentDescription = null,
+                contentDescription = stringResource(R.string.about_page),
                 tint = MaterialTheme.colorScheme.onPrimary
             )
         }
