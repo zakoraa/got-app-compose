@@ -15,49 +15,79 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.raflis.game_of_thrones.R
 import com.raflis.game_of_thrones.ui.core.component.NetworkImage
 import com.raflis.game_of_thrones.ui.theme.GameOfThronesTheme
 
 @Composable
-fun CharacterCard(name: String, title: String, image: String, houseImage: String) {
+fun CharacterCard(name: String, title: String, image: String, houseImage: String, modifier: Modifier = Modifier) {
     Card(
         shape = RoundedCornerShape(20.dp),
-        modifier = Modifier
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.secondary
+        ),
+        modifier = modifier
             .fillMaxWidth()
             .height(180.dp)
-            .background(color = MaterialTheme.colorScheme.secondary)
-            .padding(horizontal = 10.dp, vertical = 15.dp)
+            .padding(horizontal = 15.dp)
     ) {
         Row(
-            horizontalArrangement = Arrangement.SpaceBetween
+            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 10.dp, vertical = 15.dp)
         ) {
             Column {
-                Text(name, style = MaterialTheme.typography.titleMedium)
+                Text(
+                    name,
+                    style = MaterialTheme.typography.titleMedium,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.width(160.dp)
+                )
                 Spacer(modifier = Modifier.height(5.dp))
-                Text(title, style = MaterialTheme.typography.bodyMedium)
+                Text(
+                    title,
+                    style = MaterialTheme.typography.bodyMedium,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.width(160.dp)
+                )
                 Spacer(modifier = Modifier.weight(1f))
                 Button(onClick = {}) {
-                    Text("See detail -->")
+                    Text(stringResource(R.string.see_detail))
                 }
             }
             Box(
                 modifier = Modifier
                     .fillMaxHeight()
-                    .width(120.dp)
-                    .clip(shape = RoundedCornerShape(20.dp))
+                    .width(110.dp)
+                    .clip(RoundedCornerShape(20.dp))
+                    .background(
+                        color = MaterialTheme.colorScheme.primary, shape = RoundedCornerShape(20.dp)
+                    )
             ) {
-                NetworkImage(urlImage = image, modifier = Modifier.fillMaxHeight())
+                NetworkImage(
+                    urlImage = image,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.matchParentSize()
+                )
                 NetworkImage(
                     urlImage = houseImage,
                     modifier = Modifier
+                        .padding(8.dp)
                         .size(30.dp)
                         .align(Alignment.TopEnd)
                 )

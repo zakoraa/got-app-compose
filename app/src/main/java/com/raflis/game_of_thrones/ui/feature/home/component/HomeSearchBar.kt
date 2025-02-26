@@ -12,7 +12,9 @@ import androidx.compose.material3.SearchBar
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.raflis.game_of_thrones.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -35,7 +37,7 @@ fun HomeSearchBar(
             )
         },
         placeholder = {
-            Text("Search...")
+            Text("${stringResource(R.string.search)}...")
         },
         modifier = modifier
             .padding(16.dp)
@@ -43,5 +45,6 @@ fun HomeSearchBar(
             .heightIn(min = 48.dp),
     ) {
     }
+
 
 }
